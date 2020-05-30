@@ -28,8 +28,8 @@
 
 % Set applicant's personal data for header
 \name{Aditya Kumar}
-\address{\faEnvelopeO \space \href{mailto:aditya30394@tamu.edu}{aditya30394@tamu.edu} \linebreak \colorLinkedinSign \href{https://www.linkedin.com/in/aditya30394}{https://www.linkedin.com/in/aditya30394}}
-\contacts{\faPhoneSquare \space (979) 308-7076 \linebreak \faGithubSquare \href{https://github.com/aditya30394}{https://github.com/aditya30394}}
+\address{\faEnvelopeO \space \href{mailto:aditya30394@tamu.edu}{aditya30394@tamu.edu} \linebreak \colorLinkedinSign \href{https://www.linkedin.com/in/aditya30394}{\:linkedin.com/in/aditya30394}}
+\contacts{\faLink \space \href{aditya30394.github.io}{aditya30394.github.io} \linebreak \faGithubSquare \href{https://github.com/aditya30394}{\:github.com/aditya30394}}
 
 \begin{document}
 
@@ -37,11 +37,11 @@
 	\makeheader
 	
 	% Print the content
-	\begin{cvsection}{Education}
+	\begin{cvsection}{EDUCATION}
 		\begin{cvsubsection}{College Station, TX}{Texas A\&M University}{August 2018 -- May 2020}
 			\begin{itemize}
-				\item Master of Science in Computer Science. \textbf{GPA: 4.0/4.0}
-				\item Major Coursework: Artificial Intelligence; Machine Learning; Neural Networks; Cloud Computing
+				\item Master of Computer Science. \textbf{GPA: 4.0/4.0}
+				\item Major Coursework: Artificial Intelligence; Cloud Computing; Information Retrieval; Neural Networks
 				\item Graduate Assistant (GA) in the Department of Information Technology, Division of Student Affairs
 			\end{itemize}
 		\end{cvsubsection}
@@ -53,50 +53,48 @@
 		\end{cvsubsection}
 	\end{cvsection}
 	
-	\begin{cvsection}{Languages and Technologies}
+	\begin{cvsection}{LANGUAGES \& TECHNOLOGIES}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
 				\item C++ (Proficient), Java (Prior Experience), C, Python, MySQL, Shell Scripting, PHP, HTML, CSS 
-				\item Git, GitHub, GNU Debugger, Lex, Yacc, Laravel, Rational ClearCase, JavaScript, jQuery
+				\item Dynamo DB, S3, Lambda functions, Elasticsearch, Git, JavaScript, jQuery
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
-	\begin{cvsection}{Experience}
+	\begin{cvsection}{EXPERIENCE}
+	\begin{cvsubsection}{Software Development Intern}{Amazon Inc.}{June 2019 -- August 2019}
+			\begin{itemize}
+				\item Developed and launched highly-scalable internal service \textbf{(1000 TPS)} based on service-oriented architecture (SOA) using various AWS technologies like DynamoDB, Lambda, S3, etc. (Java, Python, SQL, shell).
+				\item Automated data migrations with distributed job scheduling and built a responsive single-page application (SPA) in React.js for the service which is used for analytics.
+			\end{itemize}
+		\end{cvsubsection}
+		
 		\begin{cvsubsection}{Software Engineer, R\&D}{Sandvine Technologies}{June 2016 -- July 2018}
 			\begin{itemize}
 				\item Automated parameter calibration in fuzzy control system by developing service using C++ capable of monitoring network traffic over \textbf{100,000 locations}.
 				\item Designed REST APIs for traffic shapers in C++ enabling dynamic policy enforcements without system reloads. This saves \textbf{9 hours} (average) of maintenance time per month.
 				\item Developed hash map and timers based internet traffic classification mechanism in C++ improving identification of applications that rely on third-party services by \textbf{90\%} (on average).
-				\item Improved system reloads time by \textbf{10\%} using efficient data structures like maps/sets and removing file-based configuration reads. (C++)
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Development Intern}{InApp Inc.}{May 2015 - July 2015}
-			\begin{itemize}
-				\item \textbf{Recruitment Application:} Led a 3-member team and engineered a recruitment web application in PHP using MVC architecture capable of handling every step involved in the hiring process.
+				%\item Improved system reloads time by \textbf{10\%} using efficient data structures like maps/sets and removing file-based configuration reads. (C++)
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
-	
-	
-	\begin{cvsection}{Projects}
+	\begin{cvsection}{PROJECTS}
 		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item \textbf{Deep Person Re-Identification:} Developed a deep neural \href{https://github.com/aditya30394/Person-Re-Identification}{Re-Id model} and made it robust to occlusion using Random Erasing, a data augmentation technique, and reduced the influence of pose variations by using Pose normalized Generative Adversarial Network(GAN).  Python, PyTorch
+    			\item \textbf{Reverse Image Captioning:} Developed  \href{https://github.com/aditya30394/Reverse-Image-Captioning}{Generative Adversarial Network (GAN)} which takes textual description as input and generates image fitting the description. (Python, PyTorch)
+				\item \textbf{Deep Person Re-Identification:} Developed occlusion immune \href{https://github.com/aditya30394/Person-Re-Identification}{Re-Id model} using Random Erasing and reduced pose variation influence by using Pose normalized Generative Network(GAN). (Python, PyTorch)
 				\item \textbf{Sentiment analysis (ML):} Natural language processing (NLP) project to classify reviews as positive or negative using \href{https://github.com/aditya30394/Review-Classifier}{Multinomial Naive Bayes Classifier} in Python.
-				\item \textbf{Sandvine Genie (Hackathon Winner):} Developed voice controlled system capable of detecting/reporting unusual internet traffic trend based on probe results.  PHP, \href{https://dialogflow.com/}{``api.ai''}
-				\item \textbf{Kernel based simulation study of RSDM-A:} Enhanced memory management unit of Xen hypervisor by adding in-memory table to prevent rollback attacks and  published the research in \href{https://ieeexplore.ieee.org/document/8181523/}{IEEE ISCBD 2107}.  C, C++
-				\item \textbf{eXperimental Operating System (XOS): } Designed \href{http://xosnitc.github.io/}{OS} and implemented important interrupt routines, scheduling algorithm and system calls.
+				\item \textbf{Sandvine Genie (Hackathon Winner):} Developed voice controlled system capable of detecting/reporting unusual internet traffic trend based on probe results.  (PHP, \href{https://dialogflow.com/}{``api.ai''})
+				\item \textbf{Kernel based simulation study of RSDM-A:} Enhanced memory management unit of Xen hypervisor by adding in-memory table to prevent rollback attacks and  published the research in \href{https://ieeexplore.ieee.org/document/8181523/}{IEEE ISCBD 2017} (C, C++)
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
-	\begin{cvsection}{Additional Information}
+	\begin{cvsection}{ADDITIONAL INFORMATION}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item \textbf{Work Authorization:} Eligible to intern in the US for 12 months under CPT
 				\item \textbf{Leadership:} Treasurer(August 2018 -- Present), Computer Science Graduate Student Association(CSEGSA)
 				\item \textbf{MOOCs:} Neural Networks and Deep Learning by \href{https://www.coursera.org/account/accomplishments/verify/ZYYLP6LB9HPX}{deeplearning.ai}; Structuring Machine Learning Projects by \href{https://www.coursera.org/account/accomplishments/verify/8G7XPAQQZT28}{deeplearning.ai}; Machine Learning by \href{https://www.coursera.org/account/accomplishments/verify/NQRVPNVBEN4K}{Stanford University} on Coursera; Design Patterns on \href{https://www.udemy.com/certificate/UC-DWASSJ2I/}{Udemy}
 			\end{itemize}
