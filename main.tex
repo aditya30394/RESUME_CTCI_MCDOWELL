@@ -25,10 +25,11 @@
 
 % For mathematical symbols
 \usepackage{amsmath}
+\usepackage{comment}
 
 % Set applicant's personal data for header
 \name{Aditya Kumar}
-\address{\faEnvelopeO \space \href{mailto:aditya30394@tamu.edu}{aditya30394@tamu.edu} \linebreak \colorLinkedinSign \href{https://www.linkedin.com/in/aditya30394}{\:linkedin.com/in/aditya30394}}
+\address{\faEnvelopeO \space \href{mailto:aditya30394@gmail.com}{aditya30394@gmail.com} \linebreak \colorLinkedinSign \href{https://www.linkedin.com/in/aditya30394}{\:linkedin.com/in/aditya30394}}
 \contacts{\faLink \space \href{aditya30394.github.io}{aditya30394.github.io} \linebreak \faGithubSquare \href{https://github.com/aditya30394}{\:github.com/aditya30394}}
 
 \begin{document}
@@ -36,37 +37,16 @@
 	% Print the header
 	\makeheader
 	
-	% Print the content
-	\begin{cvsection}{EDUCATION}
-		\begin{cvsubsection}{College Station, TX}{Texas A\&M University}{August 2018 -- May 2020}
-			\begin{itemize}
-				\item Master of Computer Science. \textbf{GPA: 4.0/4.0}
-				\item Major Coursework: Artificial Intelligence; Cloud Computing; Information Retrieval; Neural Networks
-				\item Graduate Assistant (GA) in the Department of Information Technology, Division of Student Affairs
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Calicut, India}{National Institute of Technology}{July 2012 -- May 2016}
-			\begin{itemize}
-				\item Bachelor of Technology in Computer Science and Engineering. \textbf{GPA: 9.37/10.0}
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{LANGUAGES \& TECHNOLOGIES}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item C++ (Proficient), Java (Prior Experience), C, Python, MySQL, Shell Scripting, PHP, HTML, CSS 
-				\item Dynamo DB, S3, Lambda functions, Elasticsearch, Git, JavaScript, jQuery
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
 	\begin{cvsection}{EXPERIENCE}
-	    \begin{cvsubsection}{Software Engineer}{Microsoft}{June 2020 -- Present}
+	    \begin{cvsubsection}{Senior Software Engineer}{Microsoft Corporation}{June 2020 -- Present}
 			\begin{itemize}
-				\item Part of \href{https://visualstudio.microsoft.com/services/visual-studio-codespaces/}{Visual Studio Codespaces} team. Codespaces provides cloud-powered development environments. 
+				\item Contributed to the \href{https://github.com/features/codespaces/}{GitHub Codespaces} platform, which provides cloud-powered development environments, supporting over \textbf{250,000} daily creates and resumes globally. Collaborated with cross-functional teams to ensure platform stability and scalability.
+                    \item Led the design and implementation of an automated pool scaling system, reducing operational costs by \textbf{\$3M} annually and achieving \textbf{99.9\%} service reliability through dynamic scaling and automated failovers.
+                    \item Developed a queue-based notification callback system, enabling immediate resource allocation and significantly improving error detection and resolution with detailed failure reporting.
+                    \item Led a cross-team initiative to optimize alerts and automate failovers, reducing \textbf{Time to Detect (TTD)} to under 5 minutes and achieving near-instant \textbf{Time to Mitigation (TTM)} through automated processes.
+                    \item Spearheaded initiatives to optimize the Codespaces codebase, enforcing coding standards and improving CI pipeline integration, resulting in a \textbf{50\% reduction} in CI/CD runtime and enhancing code quality and developer productivity.
 			\end{itemize}
+   
 		\end{cvsubsection}
 		
 	    \begin{cvsubsection}{Software Development Intern}{Amazon Inc.}{June 2019 -- August 2019}
@@ -85,29 +65,43 @@
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
-	\begin{cvsection}{PROJECTS}
+
+        % Print the content
+	\begin{cvsection}{EDUCATION}
+		\begin{cvsubsection}{College Station, TX}{Texas A\&M University}{August 2018 -- May 2020}
+			\begin{itemize}
+				\item Master of Computer Science. \textbf{GPA: 4.0/4.0}
+				% \item Major Coursework: Artificial Intelligence; Cloud Computing; Information Retrieval; Neural Networks
+				% \item Graduate Assistant (GA) in the Department of Information Technology, Division of Student Affairs
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Calicut, India}{National Institute of Technology}{July 2012 -- May 2016}
+			\begin{itemize}
+				\item Bachelor of Technology in Computer Science and Engineering. \textbf{GPA: 9.37/10.0}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+ \begin{cvsection}{PROJECTS}
 		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
     			\item \textbf{Reverse Image Captioning:} Developed  \href{https://github.com/aditya30394/Reverse-Image-Captioning}{Generative Adversarial Network (GAN)} which takes textual description as input and generates image fitting the description. (Python, PyTorch)
 				\item \textbf{Deep Person Re-Identification:} Developed occlusion immune \href{https://github.com/aditya30394/Person-Re-Identification}{Re-Id model} using Random Erasing and reduced pose variation influence by using Pose normalized Generative Network(GAN). (Python, PyTorch)
 				%\item \textbf{Sentiment analysis (ML):} Natural language processing (NLP) project to classify reviews as positive or negative using \href{https://github.com/aditya30394/Review-Classifier}{Multinomial Naive Bayes Classifier} in Python.
 				%\item \textbf{Sandvine Genie (Hackathon Winner):} Developed voice controlled system capable of detecting/reporting unusual internet traffic trend based on probe results.  (PHP, \href{https://dialogflow.com/}{``api.ai''})
-				\item \textbf{Decentralized Howdy:} Developed a \href{https://github.com/aditya30394/Decentralized-Howdy}{decentralized application} for student record storage based on smart contracts using \href{https://solidity.readthedocs.io/en/v0.4.24/}{Solidity}.
-				\item \textbf{Multikernel Simulation:} Enhanced memory management unit of Xen hypervisor by adding in-memory table to prevent rollback attacks and  published the research in \href{https://ieeexplore.ieee.org/document/8181523/}{IEEE ISCBD 2017}. (C, C++)
+				% \item \textbf{Decentralized Howdy:} Developed a \href{https://github.com/aditya30394/Decentralized-Howdy}{decentralized application} for student record storage based on smart contracts using \href{https://solidity.readthedocs.io/en/v0.4.24/}{Solidity}.
+				% \item \textbf{Multikernel Simulation:} Enhanced memory management unit of Xen hypervisor by adding in-memory table to prevent rollback attacks and  published the research in \href{https://ieeexplore.ieee.org/document/8181523/}{IEEE ISCBD 2017}. (C, C++)
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
-	\begin{cvsection}{ADDITIONAL INFORMATION}
+ 
+        \begin{cvsection}{LANGUAGES \& TECHNOLOGIES}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item \textbf{Leadership:} Treasurer (2018 -- 2019), Computer Science Graduate Student Association (CSEGSA)
-				\item \textbf{MOOCs:} Neural Networks and Deep Learning by \href{https://www.coursera.org/account/accomplishments/verify/ZYYLP6LB9HPX}{deeplearning.ai}; Structuring Machine Learning Projects by \href{https://www.coursera.org/account/accomplishments/verify/8G7XPAQQZT28}{deeplearning.ai}; Machine Learning by \href{https://www.coursera.org/account/accomplishments/verify/NQRVPNVBEN4K}{Stanford University} on Coursera; Design Patterns on \href{https://www.udemy.com/certificate/UC-DWASSJ2I/}{Udemy}
+				\item C++, C\#, Java, C, Python, MySQL, Shell Scripting, JavaScript, PHP, HTML, CSS 
+				\item Dynamo DB, Cosmos DB, Kubernetes, Azure Queues, S3, Lambda functions, Elasticsearch
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
-	
-	
 \end{document}
